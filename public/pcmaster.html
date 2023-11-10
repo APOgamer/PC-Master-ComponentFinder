@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Design</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- Importing icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <img
-        src="Images/account.png"
-        alt="Account"
-        width="50px"
-        class="account"
-      />
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Master Component Finder</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/logo.png" class="imgLogo" alt="">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#login" class="buttonIniciarSesion">INICIAR SESIÓN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <img src="Images/bell.png" alt="Bell" width="50px" class="bell" />
-
-      <img src="Images/horn.png" alt="Horn" width="50px" class="horn" />
-
-  
-    </header>
-
-    <main>
-      <section class="main-section">
-
-        <p>¿No sabes que componentes elegir para tu PC?</p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <img src="Images/buscar.png" alt="Internet" width="50px" />
-      <img src="Images/red-mundial.png" alt="Internet" width="50px" />
-      <img src="Images/loho.png" alt="Internet" width="50px" />
-      <img src="Images/birrete.png" alt="Internet" width="50px" />
-      <img src="Images/burbuja-de-dialogo.png" alt="Internet" width="50px" />
-    </footer>
-  </body>
+  <main>
+    <section id="inicio">
+      <h1>Encuentra lo tuyo<br>Sin miedo al éxito</h1>
+      <p id="txtInicio">Solo unos cuantos clicks de distancia<br> y encontrarás lo que buscas.</p>
+      <div class="social-media">
+        <a href="#facebook" class="button">Facebook</a>
+        <a href="#instagram" class="button">Instagram</a>
+      </div>
+      <button id="search-pc">BUSCAR PC!</button>
+      <a href="#novedades">Mira las novedades!</a>
+    </section>
+  </main>
+</body>
 </html>
