@@ -11,29 +11,40 @@
 
 <body>
   <header>
-    <nav>
-      <img src="images/icon.png" class="imgLogo" alt="">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#login" class="buttonIniciarSesion">INICIAR SESIÓN</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container">
+      <div class="menu">
+        <a href="#" class="logo">
+          <img src="images/icon.png" class="imgLogo" alt="">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="images/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
 
-  <main>
-    <section id="inicio">
-      <h1>Encuentra lo tuyo<br>Sin miedo al éxito</h1>
-      <p id="txtInicio">Solo unos cuantos clicks de distancia<br> y encontrarás lo que buscas.</p>
-      <div class="social-media">
-        <a href="#facebook" class="button">Facebook</a>
-        <a href="#instagram" class="button">Instagram</a>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#login" class="buttonIniciarSesion">INICIAR SESIÓN</a></li>
+          </ul>
+        </nav>
       </div>
-      <button id="search-pc">BUSCAR PC!</button>
-      <a href="#novedades">Mira las novedades!</a>
-    </section>
-  </main>
+
+      <div class="header-content">
+        <div class="header-txt">
+          <h1>Encuentra lo tuyo<br>Sin miedo al éxito</h1>
+          <p id="txtInicio">Solo unos cuantos clicks de distancia<br> y encontrarás lo que buscas.</p>
+          <a href="#facebook" class="button">Facebook</a>
+          <a href="#instagram" class="button">Instagram</a>
+        </div>
+        <div class="header-img">
+          <img src="images/img-header.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </header>
 </body>
 
 </html>
