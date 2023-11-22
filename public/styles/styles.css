@@ -90,7 +90,7 @@ img {
   margin-bottom: 50px;
 }
 
-.button {
+.buttonred {
   font-size: 18px;
   display: inline-block;
   margin: 2%;
@@ -102,22 +102,45 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.buttonIniciarSesion {
+
+.buttonblue {
   display: inline-block;
   background: #1276f0;
   padding: 13px 20px;
-  color: black;
+  color: #fff;
   border-radius: 10px;
   transition: background-color 0.2s ease;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover {
+.buttonblue2 {
+  display: inline-block;
+  background: #1276f0;
+  margin: 4%;
+  font-size: 20px;
+  padding: 10px 24px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #1276f0;
+}
+
+
+.buttonred:hover {
   background-color: #ff3680;
   transition-delay: 0.1s;
 }
 
-.buttonIniciarSesion:hover {
+.buttonblue:hover {
+  background-color: #398cf0;
+  transition-delay: 0.1s;
+}
+
+.buttonblue2:hover {
   background-color: #398cf0;
   transition-delay: 0.1s;
 }
