@@ -1,23 +1,4 @@
-/*
-margin: espacios fuera del elemento
-padding: espacios dentro del elemento
-border: se posiciona entre los dos anteriores
 
-auto: se ajusta automáticamente
-
-width / height: ancho y alto del contenido del elemento (internamente)
-overflow: hidden / visible / scroll / auto: para que el contenido se muestre o no dentro del elemento
-
-display: block / inline / inline-block / flex / grid: para que el elemento se muestre como bloque, en línea, en línea con bloque, como flex o como grid
-block: ocupa todo el ancho disponible
-inline: ocupa el ancho del contenido
-inline-block: ocupa el ancho del contenido pero se puede aplicar margen y padding
-flex: permite crear un diseño flexible
-grid: permite crear un diseño en rejilla
-
-left / right / top / bottom: para posicionar el elemento en la pantalla
-float: left / right: para posicionar el elemento en la pantalla y que el resto de elementos se posicionen a su alrededor
-*/
 
 * {
     margin: 0;
