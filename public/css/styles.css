@@ -28,6 +28,14 @@ float: left / right: para posicionar el elemento en la pantalla y que el resto d
     font-family: 'Roboto', sans-serif;
 }
 
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 @keyframes mostrar {
     0% {
         opacity: 0;
@@ -42,13 +50,14 @@ float: left / right: para posicionar el elemento en la pantalla y que el resto d
 header {
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
 
 .toggle-btn {
     display: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 30px;
     background: none;
     border: none;
     outline: none;
@@ -79,9 +88,9 @@ nav {
 }
 
 .main_figure {
-    float: left;
-    padding: 15px;
-    left: 50px;
+
+    padding: 10px;
+    left: 10px;
     position: relative;
 }
 
@@ -91,7 +100,7 @@ nav {
 }
 
 nav ul {
-    float: left;
+
     margin-left: 20px;
 }
 
@@ -102,7 +111,6 @@ nav ul li {
 }
 
 nav ul li a {
-
     color: #fff;
     font-size: 18px;
     padding: 7px 13px;
@@ -146,8 +154,11 @@ section.banner {
 .imgBanner {
     border: 2px solid #d1f2ff;
     border-radius: 50px;
-    margin: 50px;
+    align-items: center;
+    margin: 33px;
     width: 90%;
+    max-width: 100%;
+    height: auto;
 }
 
 .col2 {
@@ -166,23 +177,22 @@ h1 {
 
 #txtBanner {
     color: #ffffff;
-
     font-size: 30px;
     line-height: 3rem;
-    text-align: left;
-
+    text-align: center;
     font-weight: bold;
 }
 
 #subtxtBanner {
     color: #ffffff;
     padding-top: 50px;
-    text-align: left;
+    text-align: center;
     width: 90%;
     font-size: 19px;
 }
 
 .boton_banner {
+    text-align: center;
     padding-top: 50px;
 }
 
@@ -344,7 +354,7 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     nav ul {
         display: none;
     }
@@ -358,9 +368,9 @@ footer {
         flex-direction: column;
         border-radius: 6%;
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
+        top: 80px;
+        left: 100px;
+        width: 60%;
         background: #001014;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #061161, #001014, #001014);
