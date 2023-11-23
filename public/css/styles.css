@@ -45,7 +45,29 @@ header {
     z-index: 1000;
 }
 
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #001014;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #061161, #b50042, #001014);
@@ -100,7 +122,6 @@ li a:hover {
 /* SECCIONES*/
 section.banner {
     background-image: url('../img/inicio_fondo.gif');
-    /*inicio_fondo.gif*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -179,7 +200,6 @@ h1 {
 
 .nosotros {
     background-image: url('../img/nosotros_fondo.gif');
-    /*nosotros_fondo.gif*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -322,4 +342,30 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #001014;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #061161, #001014, #001014);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #001014, #b50042, #001014);
+        z-index: 1;
+    }
 }
